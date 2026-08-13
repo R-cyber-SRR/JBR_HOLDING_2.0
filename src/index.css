@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #121212;
+    --bg-card: #1a1815;
+    --bg-card-hover: #231f1a;
+    --color-gold: #c0a080;
+    --color-gold-light: #e4d3c0;
+    --color-gold-bright: #d4af37;
+    --color-border: #2c2720;
+    --color-border-glow: #42392d;
+    --text-primary: #f2ece4;
+    --text-secondary: #ad9e8e;
+    --text-muted: #7d7265;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-mono-custom {
+    font-family: 'Space Mono', monospace;
+  }
+}
+
+/* Custom Artistic Flair Utility Classes */
+.artistic-card {
+  background: linear-gradient(135deg, #181613 0%, #1d1a16 100%);
+  border: 1px solid #2e2820;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.artistic-card:hover {
+  border-color: #524434;
+  box-shadow: 0 15px 35px -10px rgba(192, 160, 128, 0.12);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f3e5d8 0%, #c0a080 50%, #9e7f5e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  border: 1px solid #3d3429;
+}
+
+.gold-border-glow:hover {
+  border-color: #c0a080;
+  box-shadow: 0 0 15px rgba(192, 160, 128, 0.15);
+}
+
+.artistic-badge {
+  background-color: rgba(192, 160, 128, 0.1);
+  color: #c0a080;
+  border: 1px solid rgba(192, 160, 128, 0.25);
+}
+
+/* Smooth scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a251e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c0a080;
+}

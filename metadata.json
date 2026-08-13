@@ -1,0 +1,6 @@
+{
+  "name": "JBR Holding Company",
+  "description": "A minimalist holding company portal for JBR across agriculture, real estate, transport, and technology.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
